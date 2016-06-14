@@ -1,0 +1,10 @@
+version: "2"
+services:
+  tor-relay:
+    image: chpio/tor-relay:latest
+    restart: on-failure
+    ports:
+      - "9001:9001"
+      - "9030:9030"
+    volumes:
+      - "./data-tor:/data/tor"

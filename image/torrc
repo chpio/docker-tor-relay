@@ -1,0 +1,7 @@
+User debian-tor
+DataDirectory /data/tor
+
+SocksPort 0
+ORPort 9001
+DirPort 9030
+ExitPolicy reject *:*
